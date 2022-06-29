@@ -131,4 +131,8 @@ in css space is called margin, setting the margin allows you to define how much 
 
 for starting off, its easy to design by eye, but there are ways to get specific colors and sizes of elements from webpages.
 
+Also, a couple modern button notes:
 
+- rounded edges seem to be very popular
+- also, not capitalizing every word (just the first word or the important words of a phrase)
+- One popular thing seems to be, for buttons placed next to one another, one button should have white text with a bakcground, and one should have colored text with a white bakcground.
