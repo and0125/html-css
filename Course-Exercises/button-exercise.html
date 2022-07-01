@@ -3,10 +3,24 @@
         background-color: rgb(182, 0, 0);
         color: white; /*this sets the font color*/
         border: none; /*removes the border*/
-        height: 36px; /*how tall the button is*/
-        width: 105px;
+        /* height: 36px; /*how tall the button is
+        width: 105px; */
+        margin-right: 8px;
+        margin-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
         border-radius: 2px; /*how rounded the corners are*/
         cursor: pointer; /*sets the cursor to look like a pointer*/
+        transition: opacity 0.15s; /*this defines the transition from the standard button to the hover button and also affects moving off of the button*/
+        vertical-align: top;
+    }
+    .subscribe-button:hover {/* this is how to define the hover properties*/
+            opacity: 0.65; /*the visibility of the object, 1 is solid, and you can fade out an element as you get closer to zero*/
+    }
+    .subscribe-button:active {
+        opacity: 0.4;
     }
     .join-button {
         background-color: white;
@@ -18,12 +32,18 @@
         width: 64px;
         border-radius: 2px;
         cursor: pointer;
-        margin: 10px;
+        /* margin: 10px; */
+        transition: background-color 0.15s, 
+        color 1s; /*this is how to format multiple transition properties*/
+        vertical-align: top;
     }
     .join-button:hover {
         background-color:rgb(65, 65, 197);
         color: white;
         border-color: white;
+    }
+    .join-button:active {
+        opacity: 0.7;
     }
     .tweet-button {
         background-color:rgb(78, 178, 245);
@@ -35,18 +55,19 @@
         width: 75px;
         border: none;
         cursor: pointer;
+        transition: box-shadow 0.15s;
+        vertical-align: top;
     }
     .tweet-button:hover {
-        box-shadow: linear-gradient(to bottom left, black, white);
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25); /* this rgba color allows you to define opacity in the color*/
     }
-
 
 
 </style>
 
 
 <button class="subscribe-button">
-    SUBSCRIBE
+    SUBSCRIBE extra
 </button>
 
 <button class="join-button">

@@ -136,3 +136,63 @@ Also, a couple modern button notes:
 - rounded edges seem to be very popular
 - also, not capitalizing every word (just the first word or the important words of a phrase)
 - One popular thing seems to be, for buttons placed next to one another, one button should have white text with a bakcground, and one should have colored text with a white bakcground.
+
+
+## Hovers Transitions and Shadows
+
+Hover properties apply only when the mouse cursor is hovering over the html element. This is a psuedo-class in css.
+
+There are other psuedo classes like:
+
+- active
+
+And these are accessed by writing the following in the css file:
+
+```css
+.button-name:active {
+
+}
+```
+
+See the button-exercise file for examples.
+
+## Chrome Dev Tools 
+
+when you right click in the browser, you can view all the html on the page, and you can also look at the html tags and see the css applied to the button.
+
+You can use the dev tools to see all the html and css to see the exact styles being used.
+
+there is a pointer icon in the top left of the dev tools window that will allow you to click on an element on the webpage to see what element properties and css properties the element uses. 
+
+The web tools will show colors in hexadecimal code instead of rgb, but there are hex to rgb calculators on the web. 
+
+There's also a computed tab that shows all the final styles applied to an element on a webpage. like the final calculated hieght, width, padding, etc. To copy and paste these things into the code. This allows you to pull from the internet at will using the dev tools. 
+
+## CSS box model 
+
+The first part of this is setting margins. This is the area outside of the element. You can do a margin around the full element or add margin in a specific direction. 
+
+The second part of the box model is the spacing inside the element. Things like the height and the width shouldn't be defined directly, to avoid the text of an element going outside of the element. This property is set using padding, which determines the space inside of the button, or element.
+
+You can use the Chrome Dev tool to visualize the margin and padding, this is the green, orange, tan box model. It will tell you the full list of spacing for the element you have selected. 
+
+These elements tell you what makes up an element, and how far away it is from everything else on the screen. 
+
+### Using Padding and Margin
+
+These two css elements are much more efficient to use, because they indicate spacing outside and inside of an html element. This is much more robust, because if you just use height and width, the text inside and element can be too large. However, defining the spacing with padding and margin allows the element to update and adjust when new text is added. So changing text will resize the element but keep the same spacing. 
+
+### Alignment
+
+The default behavior for browsers is to align text at the same level.
+
+To align everything at the top there's a property for this called vertical align.
+
+
+## Text Styles
+
+Now we learn how to style text. Word and other text editors have tools for styling, and css has properties to do those actions. 
+
+use the property `font-family` to change the font. Then there's a font-size, font-weight, etc. 
+
+For any property you want, you can google to find the right css property. 
